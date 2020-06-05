@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+	<div id='header'>
+		<p style="color: white; font-size: 30px; text-align: center; padding: 10px;">
+			Rock Paper Scissor Game
+		</p>
+	</div>
+	{% block content %}
+	{% endblock %}
+	
+</body>
+</html>

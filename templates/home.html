@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="select2" id='comp'>
+	<img class='image' src="{% static 'media/question.png' %}">
+	
+</div>
+<h1 class="text">Computer</h1>
+<hr style="margin-top: 10px;">
+<h1 class="text">Select Your Move</h1>
+<div id='select-options'>
+	<div class="select" id='rock'>
+		<a href="{% url 'rock' %}"><img class='image' src="{% static 'media/rock.png' %}"></a>
+	</div>
+	<div class="select" id='paper'>
+		<a href="{% url 'paper' %}"><img class='image' src="{% static 'media/papers.png' %}"></a>
+	</div>
+	<div class="select" id='scissor'>
+		<a href="{% url 'scissor' %}"><img class='image' src="{% static 'media/scissor.png' %}"></a>
+	</div>
+</div>
+<div id='select-options-text'>
+	<div class="select1">
+		<h2>Rock</h2>
+	</div>
+	<div class="select1">
+		<h2>Paper</h2>
+	</div>
+	<div class="select1">
+		<h2>Scissor</h2>
+	</div>
+</div>
+{% endblock %}
