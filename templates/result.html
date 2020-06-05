@@ -5,18 +5,18 @@
 
 <div class="select2" id='comp'>
 	<img class='image' src="{% static bot_pic %}">
-	
+
 </div>
 <h1 class="text">Computer</h1>
-<hr style="margin-top: 10px;">
+<hr style="margin-top: 10px; margin-bottom:50px;">
 
 <div class="select2" id='comp'>
 	<img class='image' src="{% static user_pic %}">
-	
+
 </div>
 <h1 class="text">You</h1>
 <h1 style="color: green;" class="text">{{ msg }}</h1>
 <a class='text' href="{% url 'home' %}"><img class='image' src="{% static 'media/reload.webp' %}"></a>
-<h1 class="text">Play Again</h1>
+<a href="{% url 'home' %}"><h1 class="text">Play Again</h1></a>
 
 {% endblock %}

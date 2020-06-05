@@ -25,7 +25,7 @@ SECRET_KEY = 'orymrp8=1t2cd6vwz+#x+9yp0$tr8ok^$d78!g@#_t5l*^athe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brainiac.pythonanywhere.com']
 
 
 # Application definition
@@ -50,11 +50,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'rock_game.urls'
-
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates',],
+        'DIRS': [TEMPLATE_PATH],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
