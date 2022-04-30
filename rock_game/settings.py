@@ -25,7 +25,7 @@ SECRET_KEY = 'orymrp8=1t2cd6vwz+#x+9yp0$tr8ok^$d78!g@#_t5l*^athe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brainiac.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
